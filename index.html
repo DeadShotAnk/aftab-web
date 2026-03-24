@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftab</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body class="bg-zinc-950 text-zinc-400 selection:bg-indigo-500/30">
+
+    <nav class="fixed w-full z-50 backdrop-blur-md border-b border-white/5 bg-zinc-950/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#home" class="text-white font-bold tracking-tighter uppercase shrink-0">Aftab</a>
+            
+            <div class="flex items-center gap-3 sm:gap-8 text-xs sm:text-sm font-medium">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#work" class="hover:text-white transition-colors">Work</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+
+                <div id="contact-wrapper" class="relative flex items-center bg-indigo-600 rounded-full overflow-hidden transition-all duration-500 ease-in-out w-[85px] h-[36px] sm:w-[100px] sm:h-[40px]">
+                    
+                    <button id="main-contact-btn" class="absolute inset-0 z-20 text-white flex items-center justify-center transition-opacity duration-300">
+                        Contact
+                    </button>
+
+                    <div id="evolved-buttons" class="flex w-full h-full opacity-0 pointer-events-none transition-opacity duration-300">
+                        <a href="mailto:mohammad.aftab1674@gmail.com" class="flex-1 flex items-center justify-center hover:bg-white/10 transition-colors border-r border-white/10">
+                            <i class="fa-regular fa-envelope text-white"></i>
+                        </a>
+                        <a href="https://wa.me/8801340862641" target="_blank" class="flex-1 flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fab fa-whatsapp text-white text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-4">
+            <div class="w-full md:w-[55%] z-10 order-2 md:order-1">
+                <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1]">
+                    Building digital <span class="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">experiences</span><br> on the edge.
+                </h1>
+                <p class="mt-6 text-lg text-zinc-400 max-w-md leading-relaxed">
+                    I'm Aftab, a developer focused on performance and clean architecture. Currently optimizing my infrastructure on Oracle Cloud.
+                </p>
+                
+                <div class="mt-10 flex flex-wrap items-center gap-6">
+                    <a href="#work" class="px-8 py-3 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20">View Projects</a>
+                    <div class="flex gap-4 text-zinc-500 font-medium items-center">
+                        <a href="https://github.com/DeadShotAnk" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github mr-1"></i> GitHub</a>
+                        <span class="text-zinc-800">/</span>
+                        <a href="https://discord.gg/Nb6WhcWCRC" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-discord mr-1"></i> Discord</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-[45%] order-1 md:order-2 flex justify-center md:justify-end">
+                <div class="relative group">
+                    <div class="absolute top-10 -left-6 floating-icon icon-1"><i class="fab fa-html5 text-orange-500 text-3xl"></i></div>
+                    <div class="absolute top-40 -right-4 floating-icon icon-2"><i class="fab fa-js text-yellow-400 text-4xl"></i></div>
+                    <div class="absolute -top-10 right-20 floating-icon icon-3"><i class="fab fa-python text-blue-400 text-4xl"></i></div>
+                    <div class="absolute bottom-20 -left-12 floating-icon icon-4"><i class="fab fa-node-js text-green-500 text-4xl"></i></div>
+                    <div class="absolute -bottom-4 right-10 floating-icon icon-1"><i class="fa-solid fa-gem text-red-500 text-3xl"></i></div>
+                    <div class="absolute top-1/2 -right-16 floating-icon icon-2"><i class="fa-solid fa-code text-indigo-400 text-2xl"></i></div>
+
+                    <div class="absolute inset-0 bg-indigo-500/20 blur-[80px] rounded-full scale-75 group-hover:scale-100 transition-transform duration-1000"></div>
+                    <div class="relative w-72 h-[400px] md:w-[450px] md:h-[550px]">
+                        <img src="assets/profile.webp" alt="Aftab Profile" 
+                             class="w-full h-full object-contain filter contrast-[1.05] drop-shadow-[0_0_40px_rgba(99,102,241,0.15)] transition-transform duration-700 group-hover:scale-[1.02]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 border-t border-white/5 bg-zinc-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        Known as <span class="text-white font-medium">DeadShotAnk</span> online, I specialize in backend systems and infrastructure optimization. My current passion is pushing the limits of <span class="text-indigo-400">Oracle Cloud ARM instances</span> to build robust, scalable environments.
+                    </p>
+                    <p class="text-zinc-400 leading-relaxed">
+                        I bridge the gap between code and infrastructure, ensuring that every deployment is as fast and secure as the code it runs.
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900/50 p-8 rounded-3xl border border-white/5">
+                    <h3 class="text-xl font-semibold text-white mb-6">Direct Channels</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="https://discord.gg/Nb6WhcWCRC" target="_blank" class="flex items-center gap-3 p-4 bg-zinc-950 rounded-2xl border border-white/5 hover:border-indigo-500/50 transition-all group">
+                            <i class="fab fa-discord text-2xl group-hover:text-indigo-400"></i>
+                            <span class="text-sm font-medium text-zinc-300">Discord Server</span>
+                        </a>
+                        <a href="https://www.instagram.com/maybe.aftab/" target="_blank" class="flex items-center gap-3 p-4 bg-zinc-950 rounded-2xl border border-white/5 hover:border-pink-500/50 transition-all group">
+                            <i class="fab fa-instagram text-2xl group-hover:text-pink-400"></i>
+                            <span class="text-sm font-medium text-zinc-300">Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/maybe.aftab" target="_blank" class="flex items-center gap-3 p-4 bg-zinc-950 rounded-2xl border border-white/5 hover:border-blue-600/50 transition-all group">
+                            <i class="fab fa-facebook text-2xl group-hover:text-blue-500"></i>
+                            <span class="text-sm font-medium text-zinc-300">Facebook</span>
+                        <a href="https://wa.me/8801340862641" target="_blank" class="flex items-center gap-3 p-4 bg-zinc-950 rounded-2xl border border-white/5 hover:border-emerald-500/50 transition-all group">
+                            <i class="fab fa-whatsapp text-2xl group-hover:text-emerald-400"></i>
+                            <span class="text-sm font-medium text-zinc-300">WhatsApp</span>
+                        </a>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="journey" class="py-24 px-6 border-t border-white/5 bg-zinc-950">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-xs font-bold tracking-widest text-indigo-500 uppercase mb-16 text-center">Education Journey</h2>
+            
+            <div class="relative">
+                <div class="absolute top-[105px] left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent hidden md:block"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+                    <div class="timeline-item opacity-0 translate-y-8 transition-all duration-700 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:border-indigo-500 transition-colors">
+                            <i class="fa-solid fa-school text-2xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-1">School</h3>
+                        <div class="h-[2px] w-12 bg-indigo-500/30 mb-4"></div> 
+                        <p class="text-zinc-400 text-sm">MCPSC</p>                  
+                        <p class="text-white font-semibold text-sm mb-6">SSC</p>
+                        <div class="w-4 h-4 rounded-full bg-indigo-600 border-4 border-zinc-950 ring-1 ring-indigo-500/50 hidden md:block"></div>
+                        <p class="mt-4 text-xs font-medium text-indigo-500 hidden md:block">2014 – 2023</p>
+                    </div>
+
+                    <div class="timeline-item opacity-0 translate-y-8 transition-all duration-700 delay-200 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-graduation-cap text-2xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-1">College</h3>
+                        <div class="h-[2px] w-12 bg-indigo-500/30 mb-4"></div>
+                        <p class="text-zinc-400 text-sm">MCPSC</p>
+                        <p class="text-white font-semibold text-sm mb-6">HSC</p>
+                        <div class="w-4 h-4 rounded-full bg-indigo-600 border-4 border-zinc-950 ring-1 ring-indigo-500/50 hidden md:block"></div>
+                        <p class="mt-4 text-xs font-medium text-indigo-500 hidden md:block">2023 – 2025</p>
+                    </div>
+
+                    <div class="timeline-item opacity-0 translate-y-8 transition-all duration-700 delay-400 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-zinc-900 border border-indigo-500/50 rounded-2xl flex items-center justify-center mb-6 relative">
+                            <div class="absolute inset-0 bg-indigo-500/10 blur-xl rounded-full"></div>
+                            <i class="fa-solid fa-code text-2xl text-indigo-400 relative z-10"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-1">University</h3>
+                        <div class="h-[2px] w-12 bg-indigo-500/30 mb-4"></div>
+                        <p class="text-zinc-400 text-sm">United International University</p>
+                        <p class="text-white font-semibold text-sm mb-6">BSc in CSE</p>
+                        <div class="w-4 h-4 rounded-full bg-zinc-950 border-4 border-indigo-500 ring-4 ring-indigo-500/20 animate-pulse hidden md:block"></div>
+                        <p class="mt-4 text-xs font-medium text-indigo-400 hidden md:block">Ongoing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="work" class="py-20 px-6 border-t border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-xs font-bold tracking-widest text-indigo-500 uppercase mb-12">Selected Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glow-card group relative bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">OCI Infrastructure</h3>
+                    <p class="text-sm">Optimizing Always-Free tier ARM instances with custom hunting scripts.</p>
+                    <div class="mt-4 flex gap-2">
+                        <span class="tech-tag">Ubuntu</span>
+                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                <div class="glow-card group relative bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">Personal Branding</h3>
+                    <p class="text-sm">A lightweight, SSL-secured personal site built with Tailwind and modern design patterns.</p>
+                    <div class="mt-4 flex gap-2">
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">WebP</span>
+                        <span class="tech-tag">DuckDNS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-xs border-t border-white/5 text-zinc-600">
+        <p>© 2026 me-aftab.duckdns.org — Secured & Fast</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
